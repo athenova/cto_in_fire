@@ -33,7 +33,7 @@ def gen(count):
     tasks = json.load(open('files/in_progress.json', 'rt', encoding='UTF-8'))
     for i, task in enumerate(tasks):
         if i < count:
-            gen_text(task, True)
+            #gen_text(task, True)
             gen_text(task, False)
 
 if __name__ == '__main__':

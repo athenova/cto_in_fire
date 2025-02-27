@@ -23,8 +23,8 @@ def job(CHAT_ID=CHAT_ID, text_gen=False, image_gen=False, problem=True, offset =
             text_file_name = f"{folder_name}/{'problem' if problem else 'solution'}.txt"
             image_file_name = f"{folder_name}/{'problem' if problem else 'solution'}.png"
 
-            if text_gen: gen_image(task, problem)
-            if image_gen: gen_text(task, problem)            
+            if image_gen: gen_image(task, problem)
+            if text_gen: gen_text(task, problem)            
 
             bot = telebot.TeleBot(BOT_TOKEN)
             if os.path.exists(image_file_name):
