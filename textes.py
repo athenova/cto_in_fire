@@ -6,8 +6,7 @@ def gen(count):
     project = Project()
     for i, task in enumerate(tasks):
         if i < count:
-            #project.gen_text(task, 'problem')
-            project.gen_text(task, 'solution')
+            project.gen_text(task)
 
 if __name__ == '__main__':
     gen(1)

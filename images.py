@@ -6,8 +6,7 @@ def gen(count):
     project = Project()
     for i, task in enumerate(tasks):
         if i < count:
-            #project.gen_image(task, 'problem')
-            project.gen_image(task, 'solution')
+            project.gen_image(task)
 
 if __name__ == '__main__':
     gen(1)
