@@ -19,5 +19,7 @@ class Project(Journalist):
             review_chat_id=-1002374309134,
             first_post_date=datetime(2025, 3, 3),
             text_generator=OpenAITextGenerator(),
+            send_text_with_image=True,
+            topic_word_limit=100,
             **kwargs
         )
